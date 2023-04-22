@@ -2,6 +2,7 @@
 target/
 dbt_packages/
 logs/
+raw_data/
 *.duckdb
 *.duckdb.wal
 reports/sources/*.csv
