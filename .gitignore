@@ -2,7 +2,17 @@
 target/
 dbt_packages/
 logs/
-raw_data/
+data/*tripdata*.parquet
+data/fhv_tripdata*.csv
+data/fhvhv_tripdata*.csv
+data/green_tripdata*.csv
+data/yellow_tripdata*.csv
+data/uber-raw-data*.csv
+data/unaltered/*.csv
+data/loaded/
+data/*tripdata*.zip
+data/*tripdata*.csv
+data/*trip data*.csv
 *.duckdb
 *.duckdb.wal
 reports/sources/*.csv
