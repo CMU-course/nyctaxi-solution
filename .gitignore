@@ -18,3 +18,4 @@ data/*trip data*.csv
 reports/sources/*.csv
 .meltano
 output
+*.DS_Store
