@@ -47,22 +47,19 @@ default_environment: dev
 environments:
 - name: dev
   env:
-    nyctaxi_DB_PATH: ${MELTANO_PROJECT_ROOT}/reports/nyctaxi_shop.${MELTANO_ENVIRONMENT}-duckdb
-    nyctaxi_DB_NAME: nyctaxi_shop
-    nyctaxi_RAW_SCHEMA: tap_nyctaxi_shop
-    TAP_nyctaxi_SHOP_YEARS: '1'
+    nyctaxi_DB_PATH: ${MELTANO_PROJECT_ROOT}/reports/nyctaxi.${MELTANO_ENVIRONMENT}-duckdb
+    nyctaxi_DB_NAME: nyctaxi
+    nyctaxi_RAW_SCHEMA: tap_nyctaxi
 - name: staging
   env:
-    nyctaxi_DB_PATH: ${MELTANO_PROJECT_ROOT}/reports/nyctaxi_shop.${MELTANO_ENVIRONMENT}-duckdb
-    nyctaxi_DB_NAME: nyctaxi_shop
-    nyctaxi_RAW_SCHEMA: tap_nyctaxi_shop
-    TAP_nyctaxi_SHOP_YEARS: '3'
+    nyctaxi_DB_PATH: ${MELTANO_PROJECT_ROOT}/reports/nyctaxi.${MELTANO_ENVIRONMENT}-duckdb
+    nyctaxi_DB_NAME: nyctaxi
+    nyctaxi_RAW_SCHEMA: tap_nyctaxi
 - name: prod
   env:
-    nyctaxi_DB_PATH: ${MELTANO_PROJECT_ROOT}/reports/nyctaxi_shop.${MELTANO_ENVIRONMENT}-duckdb
-    nyctaxi_DB_NAME: nyctaxi_shop
-    nyctaxi_RAW_SCHEMA: tap_nyctaxi_shop
-    TAP_nyctaxi_SHOP_YEARS: '5'
+    nyctaxi_DB_PATH: ${MELTANO_PROJECT_ROOT}/reports/nyctaxi.${MELTANO_ENVIRONMENT}-duckdb
+    nyctaxi_DB_NAME: nyctaxi
+    nyctaxi_RAW_SCHEMA: tap_nyctaxi
 
 plugins:
   extractors:
