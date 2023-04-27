@@ -73,6 +73,26 @@ plugins:
     config:
       years: 1
       stream_name_prefix: ${JAFFLE_RAW_SCHEMA}-raw_
+  - name: tap-parquet
+    namespace: tap_parquet
+    variant: dataops-tk
+    pip_url: git+https://github.com/dataops-tk/tap-parquet.git
+    capabilities:
+    - catalog
+    - discover
+    config:
+      years: 1
+      stream_name_prefix: ${JAFFLE_RAW_SCHEMA}-raw_
+  - name: tap-csv
+    namespace: tap_csv
+    variant: meltanolabs
+    pip_url: git+https://github.com/MeltanoLabs/tap-csv.git
+    capabilities:
+    - catalog
+    - discover
+    config:
+      years: 1
+      stream_name_prefix: ${JAFFLE_RAW_SCHEMA}-raw_      
   loaders:
   - name: target-duckdb
     variant: jwills
