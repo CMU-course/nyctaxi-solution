@@ -19,3 +19,5 @@ reports/sources/*.csv
 .meltano
 output
 *.DS_Store
+.env
+env/
